@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #662572;
+    font-weight: bolder;
+    margin-bottom: 1.3rem;
+}
+
+h4 {
+    color: #662572;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+
+/* The Modal (background) */
+
+.modal-stack {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content-stack {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close-stack {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 0.5rem;
+}
+
+.close-stack:hover,
+.close-stack:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header-stack {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 0.3rem;
+    background: linear-gradient(to right, #3D1D4A, #662572, #772B6D, #8C3566, #BB4069, #E04350);
+    color: white;
+}
+
+.modal-body-stack {
+    padding: 2px 16px;
+    background-color: #FFFFFF;
+}
+
+
+/*NavBar*/
+
+#navbar-fixed {
+    display: none;
+}
+
+.navbar-toggler {
+    border: none;
+    margin-left: 1.25rem;
+}
+
+.nav-logo {
+    margin-left: 0.57rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-sections-container {
+    font-size: 1.25rem;
+}
+
+.nav-item-left {
+    margin-left: 2rem;
+}
+
+.contactanos-item {
+    display: inline-block;
+    border-radius: 1.25rem;
+    background: linear-gradient(to right, #3D1D4A, #662572, #772B6D, #8C3566, #BB4069, #E04350);
+    width: 9.88rem;
+    height: 2.38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactanos-link {
+    color: #FFFFFF !important;
+}
+
+.carousel-caption {
+    left: 3%;
+    width: 30rem;
+    text-align: start;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+
+/*Fin navbar*/
+
+
+/*Nosotros*/
+
+.subtitulo-presentacion {
+    padding-top: 3rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #3E3E3E;
+}
+
+.nosotros-texto {
+    width: 20.3rem;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*Fin Nosotros*/
+
+
+/*Servicios*/
+
+.servicios-container {
+    width: 20.3rem;
+    margin: auto;
+}
+
+.servicio-imagen-size {
+    width: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.subparrafo-servicios {
+    font-size: 0.8rem;
+    color: rgb(226, 7, 7);
+    margin-bottom: 1.7rem;
+}
+
+
+/*Fin servicios*/
+
+
+/*Portfolio*/
+
+.portfolio-container {
+    width: 20.3rem;
+}
+
+.modal-container {
+    padding: 0;
+    position: relative;
+}
+
+.modal-container button {
+    border: none;
+}
+
+.modal-item {
+    max-width: 20rem;
+    width: 100%;
+}
+
+.modal-content-stack {
+    width: 20rem;
+    height: 28rem;
+}
+
+.modal-body-stack {
+    margin-top: 1rem;
+    background-color: #FFFFFF;
+}
+
+.modal-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #3D1D4A, #662572, #772B6D, #8C3566, #BB4069, #E04350);
+}
+
+
+/*Fin portfolio/
+
+/*Clientes*/
+
+.clientes-contenedor {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#clientes-slider {
+    width: 20.3rem;
+}
+
+.item {
+    width: 9.5rem;
+}
+
+.item-center {
+    margin-top: 2rem;
+}
+
+.item-center2 {
+    margin-top: 3rem;
+}
+
+.item-center3 {
+    margin-top: 4rem;
+}
+
+
+/*Fin clientes*/
+
+
+/*Footer*/
+
+footer {
+    background-color: #3D1D4A;
+    color: white;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.subtitulo-contacto {
+    font-size: 0.75rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 0.4rem;
+}
+
+#titulos-contacto {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #3D1D4A, #662572, #772B6D, #8C3566, #BB4069, #E04350);
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.last-icon {
+    padding-bottom: 2rem;
+}
+
+
+/*Fin footer*/
+
+@media only screen and (min-width: 768px) {
+    h3 {
+        font-size: 2.38rem;
+    }
+    /*Nosotros*/
+    .subtitulo-presentacion {
+        font-size: 0.88rem;
+        padding-top: 5.05rem;
+        text-align: center;
+    }
+    .nosotros-texto {
+        width: 45.3rem;
+    }
+    /*Fin Nosotros*/
+    /*Servicios*/
+    .servicios-container {
+        width: 45.3rem;
+    }
+    /*Fin servicios*/
+    /*Portfolio*/
+    .portfolio-container {
+        width: 45.3rem;
+    }
+    .modal-content-stack {
+        width: 30rem;
+        height: 39rem;
+    }
+    .modal-body-stack {
+        margin-top: 1rem;
+        background-color: #FFFFFF;
+    }
+    /*Fin portfolio/
+
+    /*Clientes*/
+    #clientes-slider {
+        width: 45.3rem;
+    }
+    /*Fin clientes*/
+    /*Footer*/
+    .subtitulo-contacto {
+        font-size: 0.88rem;
+    }
+    /*Fin footer*/
+}
+
+@media only screen and (min-width:992px) {
+    /*navBar*/
+    #navbar-fixed {
+        display: unset;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: white;
+    }
+    #navbar-small {
+        display: none;
+    }
+    .nav-logo {
+        margin-left: 1rem;
+    }
+    .nav-sections-container {
+        position: relative;
+    }
+    .nav-sections {
+        position: absolute;
+        right: 3.25rem;
+    }
+    .nav-item-right {
+        margin-right: 2rem;
+    }
+    .nav-items a {
+        color: #3E3E3E;
+    }
+    .carousel-container {
+        margin-top: 8rem;
+    }
+    .carousel-caption {
+        width: 40rem;
+        font-size: 1.3rem;
+    }
+    /*Nosotrtos*/
+    .nosotros-texto {
+        width: 58.2rem;
+    }
+    /*Fin Nosotros*/
+    /*Servicios*/
+    .servicios-container {
+        width: 58.2rem;
+    }
+    /*Fin servicios*/
+    /*Portfolio*/
+    .portfolio-container {
+        width: 58.2rem;
+    }
+    .modal-content-stack {
+        width: 30rem;
+        height: 40rem;
+    }
+    /*Fin portfolio/
+
+    /*Clientes*/
+    #clientes-slider {
+        width: 58.2rem;
+    }
+    /*Fin clientes*/
+}
+
+@media only screen and (min-width:1140px) {
+    /*Nosotrto*/
+    .nosotros-texto {
+        width: 75.2rem;
+    }
+    .carousel-caption {
+        width: 48rem;
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+    /*Fin Nosotros*/
+    /*Servicios*/
+    .servicios-container {
+        width: 75.2rem;
+    }
+    /*Fin servicios*/
+    /*Portfolio*/
+    .portfolio-container {
+        width: 75.2rem;
+    }
+    /*Fin portfolio/
+
+    /*Clientes*/
+    #clientes-slider {
+        width: 75.2rem;
+    }
+    /*Fin clientes*/
+}
+
+@media only screen and (min-width:1320px) {
+    /*Nosotrto*/
+    .nosotros-texto {
+        width: 80rem;
+    }
+    /*Fin Nosotros*/
+    /*Servicios*/
+    .servicios-container {
+        width: 80rem;
+    }
+    /*Fin servicios*/
+    /*Portfolio*/
+    .portfolio-container {
+        width: 80rem;
+    }
+    /*Fin portfolio/
+
+    /*Clientes*/
+    #clientes-slider {
+        width: 80rem;
+    }
+    /*Fin clientes*/
+}
